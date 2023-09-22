@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.main .main__elements .main__text .main__button__first .main-button {
+  padding: 15px 38px;
+  font-size: 18px;
+  color: #7875FE;
+  border: 1px solid #7875FE;
+  background: transparent;
+  transition: 0.3s ease;
+}
+.main .main__elements .main__text .main__button__first .main-button:hover {
+  background: #7875FE;
+  color: #FFFFFF;
+}
+@media (min-width: 576px) {
+  .main .main__elements .main__text .main__button__first .main-button {
+    font-size: 20px;
+  }
+}
+
+[class*=__container] {
+  max-width: 1110px;
+  margin: 0px auto;
+}
+@media (min-width: 200px), (max-width: 320px) {
+  [class*=__container] {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  [class*=__container] {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1440px) {
+  [class*=__container] {
+    padding: 0;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-top: 102px;
+  padding: 50px 0;
+}
+.main .main__elements .main__text .main-title {
+  margin: 0;
+  font-size: 30px;
+  color: #4C5866;
+  width: 216px;
+  line-height: 100%;
+}
+.main .main__elements .main__text .main-subtitle {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #85859B;
+  line-height: 150%;
+}
+.main .main__elements .main__text .main__button__first {
+  margin-top: 20px;
+}
+.main .main__elements .main-background {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .main {
+    padding: 0;
+    overflow: hidden;
+  }
+  .main .main__elements {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .main .main__elements .main__text {
+    margin: 60px 0;
+  }
+  .main .main__elements .main__text .main-title {
+    font-size: 38px;
+    width: 273px;
+  }
+  .main .main__elements .main__text .main-subtitle {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .main .main__elements .main__text .main__button__first .main-button {
+    padding: 19px 60px;
+  }
+  .main .main__elements .main-background {
+    display: initial;
+    height: 396px;
+  }
+  .main .main__elements .main-background img {
+    width: 195px;
+    -o-object-position: 0 20px;
+       object-position: 0 20px;
+  }
+}
+@media (min-width: 768px) {
+  .main .main__elements .main__text {
+    margin: 65px 0;
+  }
+  .main .main__elements .main__text .main-title {
+    font-size: 50px;
+    width: 359px;
+  }
+  .main .main__elements .main__text .main-subtitle {
+    font-size: 18px !important;
+    margin-top: 30px !important;
+  }
+  .main .main__elements .main__text .main__button__first {
+    margin-top: 30px;
+  }
+  .main .main__elements .main__text .main__button__first .main-button {
+    padding: 24px 90px;
+  }
+  .main .main__elements .main-background {
+    height: 410px;
+  }
+  .main .main__elements .main-background img {
+    width: 270px;
+    -o-object-position: 0 60px;
+       object-position: 0 60px;
+  }
+}
+@media (min-width: 1110px) {
+  .main {
+    margin-top: 86px;
+  }
+  .main .main__elements .main__text {
+    margin: 130px 0;
+  }
+  .main .main__elements .main__text .main-title {
+    font-size: 60px;
+    width: 431px;
+  }
+  .main .main__elements .main-background {
+    height: 560px;
+  }
+  .main .main__elements .main-background img {
+    width: 510px;
+    -o-object-position: 0 60px;
+       object-position: 0 60px;
+  }
+}

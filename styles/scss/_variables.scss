@@ -1,0 +1,109 @@
+// Шрифты
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
+
+// Обнуление
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+// Переменные и шаблоны
+$gray-1: #4C5866;
+$gray-2: #666666;
+$gray-3: #85859B;
+$gray-4: #B5B5BD;
+$gray-5: #C4C4C4;
+$gray-6: #BCBCBC;
+$gray-7: #C0C0C0;
+$gray-8: #DDDDDD;
+$button-color: #7875FE;
+$body-gray: #ebebeb;
+$body-white: #FFFFFF;
+$blue-light: #69727E;
+$animation: .3s ease;
+
+%buttons {
+	padding: 15px 38px;
+	font-size: 18px;
+	color: $button-color;
+	border: 1px solid $button-color;
+	background: transparent;
+	transition: $animation;
+
+	&:hover {
+		background: $button-color;
+		color: $body-white;
+	}
+
+	@media (min-width: 576px) {
+		font-size: 20px;
+	}
+}
+
+// Стандарты и контейнер
+
+// Контейнер
+[class*="__container"] {
+	max-width: 1110px;
+	margin: 0px auto;
+
+	// Значения padding
+	@media (min-width: 200px), (max-width: 320px) {
+		padding: 0 15px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 0 40px;
+	}
+
+	@media (min-width: 1440px) {
+		padding: 0;
+	}
+}
+
+// Стандарты
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	cursor: default;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}

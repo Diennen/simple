@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+[class*=__container] {
+  max-width: 1110px;
+  margin: 0px auto;
+}
+@media (min-width: 200px), (max-width: 320px) {
+  [class*=__container] {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  [class*=__container] {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1440px) {
+  [class*=__container] {
+    padding: 0;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  cursor: default;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 1;
+}
+.header__elements .header__section__1__main {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 10px 0;
+}
+.header__elements .header__section__1__main .header__section__1 .header-logo {
+  display: flex;
+  justify-content: center;
+}
+.header__elements .header__section__1__main .header__section__1 .header__nav {
+  display: none;
+}
+.header__elements .header__section__2__main {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 15px 0;
+}
+.header__elements .header__section__2__main .header__section__2 .header-links-2 {
+  display: none;
+}
+.header__elements .header__section__2__main .header__section__2 .header__account__2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__elements .header__section__2__main .header__section__2 .header__account__2 .header__user {
+  display: flex;
+  gap: 30px;
+}
+
+@media (min-width: 576px) {
+  .header__elements .header__section__1__main .header__section__1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header-logo {
+    justify-content: normal;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav {
+    display: initial;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header-links-1 {
+    display: none;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header__account__1 {
+    display: flex;
+    gap: 30px;
+  }
+  .header__elements .header__section__2__main {
+    padding: 18px 0;
+  }
+  .header__elements .header__section__2__main .header__section__2 .header-links-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__elements .header__section__2__main .header__section__2 .header-links-2 li a {
+    position: relative;
+    color: #4C5866;
+    font-size: 20px;
+  }
+  .header__elements .header__section__2__main .header__section__2 .header-links-2 li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #4C5866;
+    transition: 0.3s ease;
+    margin: 0 auto;
+  }
+  .header__elements .header__section__2__main .header__section__2 .header-links-2 li a:hover::after {
+    width: 100%;
+  }
+  .header__elements .header__section__2__main .header__section__2 .header__account__2 {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .header__elements .header__section__1__main {
+    padding: 30px 0;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header-links-1 {
+    display: flex;
+    gap: 60px;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header-links-1 li a {
+    color: #4C5866;
+    font-size: 20px;
+    position: relative;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header-links-1 li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #4C5866;
+    transition: 0.3s ease;
+    margin: 0 auto;
+  }
+  .header__elements .header__section__1__main .header__section__1 .header__nav .header-links-1 li a:hover::after {
+    width: 100%;
+  }
+  .header__elements .header__section__2__main {
+    display: none;
+  }
+}
